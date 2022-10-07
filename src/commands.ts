@@ -23,6 +23,11 @@ Cypress.Commands.add(
 );
 
 Cypress.Commands.add(
+  'disposeHar',
+  (): Cypress.Chainable => cy.task('disposeHar')
+);
+
+Cypress.Commands.add(
   'saveHar',
   (options?: Partial<SaveOptions>): Cypress.Chainable => {
     const fallbackFileName = Cypress.spec.name;
