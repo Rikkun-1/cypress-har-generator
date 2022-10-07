@@ -116,6 +116,8 @@ export class Plugin {
       await this.fileManager.removeFile(this.tmpPath);
       delete this.buffer;
     }
+
+    return null;
   }
 
   private async buildHar(): Promise<string | undefined> {
@@ -146,7 +148,7 @@ export class Plugin {
     return this.networkObservable.subscribe(async (request: NetworkRequest) => {
       const entry = await new EntryBuilder(request).build();
       const entryStr = JSON.stringify(entry);
-      this.buffer.write(`${entryStr}${EOL}`);
+      this.buffer?.write(`${entryStr}${EOL}`);
     });
   }
 

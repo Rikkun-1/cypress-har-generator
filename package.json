@@ -1,10 +1,10 @@
 {
-  "name": "@neuralegion/cypress-har-generator",
-  "version": "5.3.3",
+  "name": "@nothing-interesting/cypress-har-generator",
+  "version": "5.3.5",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NeuraLegion/cypress-har-generator.git"
+    "url": "git+https://github.com/Rikkun-1/cypress-har-generator"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NeuraLegion/cypress-har-generator/issues"
+    "url": "https://github.com/Rikkun-1/cypress-har-generator/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -42,7 +42,7 @@
     "prepublishOnly": "npm run build",
     "prepare": "is-ci || husky install"
   },
-  "homepage": "https://github.com/NeuraLegion/cypress-har-generator#readme",
+  "homepage": "https://github.com/Rikkun-1/cypress-har-generatorr#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
